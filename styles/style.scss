@@ -1,6 +1,6 @@
 @mixin column_size() {
     position: relative;
-    width: 350px;
+    width: 400px;
     border: 0px solid red;
 }
 
@@ -8,6 +8,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.inline li{
+    display: inline;
 }
 body {
     background: #000211;
@@ -24,11 +27,15 @@ header{
     }
 }
 #main {
+    max-width: 1208px;
     position: relative;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-top: 5rem;
+    margin: auto;
+
+    border: 0 solid red
 }
 
 #data {
@@ -36,9 +43,10 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 0 solid red;
 
     #imgs {
-        border: 1px solid #ccc;
+        border: 0 solid #ccc;
         max-width: 160px;
         height: 208px;
         padding: 0.2rem;  
@@ -78,7 +86,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 0px solid red;   
+    border: 0 solid red;   
 
     img {
         max-width: 250px;
@@ -97,6 +105,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 0 solid red;
     h1 {
         text-align: center;
     }
